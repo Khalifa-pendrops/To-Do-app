@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>To-Do App</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <h1>To-Do <span>List</span></h1>
+      </header>
+      <main>
+        <div class="input-main">
+          <input
+            type="text"
+            name="text"
+            id="task"
+            placeholder="Enter task here..."
+          />
+          <button class="add-btn" onclick="addTask()">Add</button>
+        </div>
+
+        <hr />
+
+        <section class="input-main" id="display-page">
+          <ul id="my-list"></ul>
+          <!-- <button type="reset" id="delete-btn" onclick="deleteTask()">
+            <img src="./asset/trash-can-arrow-up-solid.svg" alt="" width="15px">
+        </button> -->
+        </section>
+        <!-- <button type="reset" id="delete-btn" onclick="deleteTask()">
+            <img src="./asset/trash-can-arrow-up-solid.svg" alt="" width="15px">
+        </button> -->
+      </main>
+    </div>
+    <script src="./script.js"></script>
+  </body>
+</html>
